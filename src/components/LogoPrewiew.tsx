@@ -4,7 +4,7 @@ import { LayoutGrid, icons } from 'lucide-react'
 
 const LogoPrewiew = () => {
 
-    const [storageValue, setStorageValue] = useState();
+    const [storageValue, setStorageValue] = useState<any>();
     const { updateStorage } = useContext(UpdateStorageContext)
 
     useEffect(() => {
@@ -14,6 +14,7 @@ const LogoPrewiew = () => {
     }, [updateStorage])
 
     const Icon = ({ name, color, size, rotate }: any) => {
+        // @ts-ignore
         const LucideIcon = icons[name];
         if (!LucideIcon) {
             return;

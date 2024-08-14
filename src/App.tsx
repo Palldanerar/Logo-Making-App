@@ -13,7 +13,7 @@ const App = () => {
   const [updateStorage, setUpdateStorage] = useState({})
 
   return (
-    <UpdateStorageContext.Provider value={{updateStorage, setUpdateStorage}}>
+    <UpdateStorageContext.Provider value={{ updateStorage, setUpdateStorage }}>
       <div>
         <Header />
         <div className='w-64 fixed'>
